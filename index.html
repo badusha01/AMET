@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AMET x MAERSK</title>
+  <link rel="stylesheet" href="./style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet" />
+</head>
+
+<body>
+  <nav>
+    <input type="checkbox" id="check" />
+    <label for="check">
+      <i class="fas fa-bars" id="btn"></i>
+      <i class="fas fa-times" id="cancel"></i>
+    </label>
+    <img src="./images/maersk-logo-new.png" alt="" />
+    <ul>
+      <li><a href="#">About Us</a></li>
+      <li><a href="#">Courses Offered</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+  </nav>
+
+
+  <div class="form">
+    <div class="container">
+      <div class="title">
+        <h4>
+          Admission 2024-25 <br />
+          <p>
+            Chart Your Maritime Future with AMET University's Premier Programs
+          </p>
+        </h4>
+      </div>
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter name" required />
+          </div>
+          <div class="input-box">
+            <span class="details">Enter Email Address</span>
+            <input type="text" placeholder="Enter Email Address" required />
+          </div>
+          <div class="input-box">
+            <span class="details">Enter Mobile Number</span>
+            <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" maxlength="10"
+              placeholder="Enter Mobile Number" required />
+          </div>
+          <div class="input-box">
+            <span class="details">Select City</span>
+            <input type="text" placeholder="Select Your City" required />
+          </div>
+          <div class="input-box">
+            <span class="details">Select State</span>
+            <input type="text" placeholder="Select Your State" required />
+          </div>
+          <div class="input-box">
+            <span class="details">Select Course</span>
+            <input type="text" placeholder="Enter Your Course" required />
+          </div>
+        </div>
+        <div class="button">
+          <input type="submit" value="SUBMIT" />
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div class="courses-container">
+    <h1>Programs Offered</h1>
+
+    <!-- <div class="courses">
+
+      </div> -->
+
+    <div class="courses">
+
+      <div class="content">
+        <p>B.E. Marin Engineering 4 Years <button class="show-popup" id="openModal" href="">Learn More</button> </p>
+        <img src="./images/me.png" alt="">
+
+        <div class="modal" id="modal">
+          <div class="modal-inner">
+            <h2>Eligibility Criteria</h2>
+            <ul>
+              <li>12th Pass with PCM minimum of 60% and English minimum of 50%</li>
+              <li>Qualification in IMU CET is mandatory</li>
+              <li>Passport is mandatory</li>
+              <li>Age limit is below 25 years</li>
+            </ul>
+            <button class="show-popup" id="closeModal">Close</button>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <p>Graduate Marine Engineering(GME) 1 year <button class="show-popup" id="openModal" href="">Learn More</button>
+        </p>
+        <img src="./images/graduate-marine.png" alt="">
+        <div class="modal" id="modal">
+          <div class="modal-inner">
+            <h2>Eligibility Criteria</h2>
+            <ul>
+              <li>B. E. in Mechanical Engineering /
+                Naval Architecture with minimum
+                50% OR 4 years bachelor's degree
+                with minimum 50% in Mechanical
+                and Automation Engineering from
+                an UGC recognized university or
+                approved by AICTE</li>
+              <li>English minimum of 50% in 10th, 12th or degree examinations</li>
+              <li>Passport is mandatory</li>
+              <li>Age limit is below 28 years</li>
+            </ul>
+            <button class="show-popup" id="closeModal">Close</button>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <p>B.Sc. Nautical Science 3 Years <button class="show-popup" href="">Learn More</button> </p>
+        <img src="./images/anchor.png" alt="">
+      </div>
+      <div class="content">
+        <p>Electro Technical Officer(ETO) 17 Weeks <button class="show-popup" href="">Learn More</button> </p>
+        <img src="./images/technical-officer.png" alt="">
+      </div>
+
+      <div class="content">
+        <p>Diploma in Nautical Science 1 Year <button class="show-popup" href="">Learn More</button> </p>
+        <img src="./images/nautical.jpg" alt="">
+      </div>
+      <div class="content">
+        <p>GP Rating 6 Months <button class="show-popup" href="">Learn More</button> </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="about">
+    <div class="courses">
+    </div>
+    
+  </div>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
